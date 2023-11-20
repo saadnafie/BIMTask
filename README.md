@@ -10,11 +10,18 @@
 ## to run the project
 
 1- git clone project
+
 2- set .env file with database info
+
 3- run command: composer install
+
 4- run command: npm install
+
 5- command: npm run build
+
 6- runcommand: php artisan migrate:fresh --seed
 
+
 ## API
+
 you can find Postman JSON collection file inside folder name: "postman json"
