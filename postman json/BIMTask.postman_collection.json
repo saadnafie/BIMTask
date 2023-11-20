@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "1a520a7a-5c86-40dc-9888-475049bc29d6",
+		"name": "BIMTask",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "will.gerald@example.org",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8001/api/auth/login",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transactions.index",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDEvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE3MDA1MTI5MTcsImV4cCI6MTcwMDUxNjUxNywibmJmIjoxNzAwNTEyOTE3LCJqdGkiOiJMUE9zdVh1emNVQ1d0MTVjIiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.V5FvhGx_7hQX54OXLjA0uQlrxQRbbksmO-Pn0HFljWY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8001/api/transactions",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transactions.show",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDEvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE3MDA1MTI5MTcsImV4cCI6MTcwMDUxNjUxNywibmJmIjoxNzAwNTEyOTE3LCJqdGkiOiJMUE9zdVh1emNVQ1d0MTVjIiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.V5FvhGx_7hQX54OXLjA0uQlrxQRbbksmO-Pn0HFljWY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8001/api/transactions/1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"transactions",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
